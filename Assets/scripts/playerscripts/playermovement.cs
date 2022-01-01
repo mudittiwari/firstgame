@@ -75,5 +75,9 @@ public class playermovement : MonoBehaviour
         {
             anim.SetBool("jump", false);
         }
+        if(other.gameObject.tag=="enemy")
+        {
+            Debug.Log("game over");
+        }
     }
 }
